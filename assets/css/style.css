@@ -1,0 +1,285 @@
+/*font-family: 'Inconsolata', monospace;
+font-family: 'Playfair Display', serif;*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 906px;
+    margin: 0 auto;
+}
+
+
+/*Header*/
+.header {
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+     max-width: 1060px;
+}
+
+.fixed {
+   position: fixed;
+    background-color: #fff;
+    width: 100%;
+    top: 0;
+    left: 10.71%;
+}
+
+.header_title {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #333;
+    font-family: 'Inconsolata', monospace;
+    cursor: pointer;
+}
+
+
+/*Navigation*/
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+.nav_link {
+    text-decoration: none;
+    color: #626262;
+    margin-left: 120px;
+}
+
+.nav_link:after {
+    content: "";
+
+    background-color: #333;
+    width: 100%;
+    height: 3px;
+    display: none;
+/*    transition: display .3s linear;*/
+
+}
+
+.nav_link:hover:after {
+     
+   
+    display: block;
+   
+}
+
+/*Poster*/
+
+.poster{
+    margin-top: 120px;
+    
+    align-items: center;
+    display: flex;
+    align-content: center;
+}
+
+.poster__img {
+    margin: 0 auto;
+}
+
+/*Description*/
+.description__outer {
+    margin-bottom: 130px;
+}
+
+.description {
+    margin-top: 95px;
+}
+
+.description__pretitle {
+    font-size: 14px;
+    color: #b4ad9e;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.description__title {
+    font-size: 30px;
+    color: #626262;
+    margin-bottom: 40px;
+}
+
+.description__text {
+    font-size: 14px;
+    color: #626262;
+    line-height: 28px;
+    margin-bottom: 52px;
+}
+
+.description__coment {
+    text-transform: uppercase;
+    color: #b4ad9e;
+    font-size: 14px;
+}
+
+
+/*Articles*/
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-basis: 50%;
+    
+}
+
+.articles__column {
+    width: 45%;
+    
+}
+
+
+.articles__img {
+    margin-bottom: 25px;
+}
+
+.articles__pretitle {
+    font-size: 14px;
+    color: #b4ad9e;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.articles__title {
+     font-size: 30px;
+    color: #626262;
+    margin-bottom: 40px;
+}
+
+.articles__text {
+    padding: 0 2px;
+    width: 100%;
+    font-size: 14px;
+    color: #626262;
+    line-height: 28px;
+    margin-bottom: 52px;
+}
+
+/*signup*/
+
+.signup {
+    background-color: #f0f0f0;
+     padding-bottom:  65px;
+    margin-bottom: 90px;
+}
+
+.signup__inner {
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.signup__title {
+    font-size: 30px;
+    color: #333333;
+    padding: 70px 0;
+}
+
+.signup__form {
+    border-bottom: 2px solid #333;
+    display: inline-block;
+    background-color: inherit;
+    position: relative;
+    
+   
+}
+
+.signup__text {
+    width: 370px;
+    border: 0;
+    font-size: 14p;
+    color: #626262;
+    padding: 10px 0;
+      background-color: inherit;
+    }
+
+.signup__btn {
+    border: 0;
+    background: url('../../assets/images/svg/send.svg');
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+}
+
+/*BUTTON*/
+
+.btn_container {
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    border: 1px solid #cbcbcb;
+    background: none;
+    font-size: 20px;
+    color: #626262;
+    padding: 17px 34px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #626262;
+    color: #fff;
+    border-color: #626262;
+}
+
+/*footer*/
+
+.footer {
+    background-color: #f0f0f0;
+    display: flex;
+    padding: 40px 70px 45px 150px;
+    justify-content: space-between;
+}
+
+.footer__data {
+    font-size: 14px;
+    color: #333;
+    font-weight: 700;
+    margin-right: 30px;
+}
+
+.footer__info {
+    display: flex;
+}
+
+.footer__privacy {
+      font-size: 14px;
+    color: #333;
+    font-weight: 700;
+}
+.footer__social {
+      font-size: 14px;
+    color: #333;
+    font-weight: 700;
+    display: flex;
+  
+}
+
+.footer__social__item {
+    margin: 0 10px;
+}
+
+
+
